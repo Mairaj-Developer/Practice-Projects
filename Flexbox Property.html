@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    
+    body{
+      background-color: black;
+      color: white;
+    }
+    
+    @media only screen and (orientation: landscape) {
+      body{
+        background-color: lightpink;
+        color: black;
+      }
+      
+    }
+    
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 8rem;
+    }
+    
+    .mainbox{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 3.5rem;
+    }
+    
+    .box{
+      color: lightyellow;
+      font-family: Times New Roman;
+      border: 5px solid darkgrey;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 7px 10px 15px 2px silver;
+      text-shadow: 2.5px 5px 5px lightblue;
+      width: 40vw;
+      height: 20vh;
+      overflow: scroll;
+    }
+    
+    .box1{
+      background-color: darkred;
+      order: 5;
+    }
+    
+    .box2{
+      background-color: brown;
+      order: 4;
+    }
+    
+    .box3{
+      background-color: steelblue;
+      order: 3;
+    }
+    
+    .box4{
+      background-color: teal;
+      order: 2;
+    }
+    
+    .box5{
+      background-color: darkgreen;
+      order: 1;
+    }
+    
+    .box:before{
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolorem molestiae sed quo nobis, odit eaque hic illo rerum, inventore unde explicabo dignissimos quisquam consequatur enim aperiam porro velit, amet quasi similique illum mollitia, nulla ab. Repudiandae ipsa voluptate fugit sunt soluta, placeat quis magni, nisi ab molestias totam odit.";
+    }
+    
+    .box:after{
+      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quod fugit placeat officiis aliquid, animi, iure natus reiciendis vero, accusamus soluta. Voluptates deserunt praesentium repellendus quasi velit corporis, dolores ab facilis optio cum enim laborum, sint similique ducimus, quis neque quia totam repudiandae quibusdam. Voluptate iste libero fugiat iure ratione.";
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Boxes</h1>
+  </header>
+  
+  <main>
+    <div class="mainbox">
+      <div class="box box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, omnis unde explicabo et saepe aspernatur ex error fugiat id quod.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates at veniam consectetur facere iste, voluptatem ad sapiente dicta nobis quibusdam delectus laborum fugiat assumenda tenetur ipsam odio voluptatum. Asperiores, saepe?</div>
+      <div class="box box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui vel nemo maxime, perspiciatis consequuntur saepe nihil, tempore odit repudiandae nulla.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque ratione vero autem consequuntur praesentium nam natus perferendis voluptate excepturi aut temporibus dolorem eos molestiae consectetur nemo et, consequatur aspernatur architecto.</div>
+      <div class="box box3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus reiciendis ab illo vero voluptate nam, tenetur praesentium vitae autem deserunt.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa consequatur dolorum, ex repellat omnis saepe dolor reiciendis sequi est doloribus, inventore optio vitae alias debitis. Eligendi deleniti itaque perferendis consectetur!</div>
+      <div class="box box4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque molestias animi officiis fugit saepe nemo, beatae incidunt necessitatibus harum eum!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis error repudiandae sequi magnam ducimus, a aspernatur dolorem cumque neque repellat, quaerat quam molestias placeat. Animi tempora ut magnam, labore recusandae!</div>
+      <div class="box box5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam deleniti dolorum provident nostrum ducimus magnam optio! At quisquam similique nostrum!
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quo, dignissimos eaque. Quam modi dicta sunt qui quia unde distinctio perspiciatis iure iste velit. Accusamus cumque vero eius delectus sit!</div>
+    </div>
+  </main>
+</body>
+</html>

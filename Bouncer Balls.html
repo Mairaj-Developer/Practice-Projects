@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sigma - Bouncer Ball</title>
+  <style>
+  
+  *{
+    padding: 0;
+    margin: 0;
+  }
+    .container{
+      background-color: lightblue;
+      width: 100vw;
+      height: 25vh;
+      position: relative;
+    }
+    
+    .ball{
+      background-color: lightpink;
+      width: 40px;
+      height: 40px;
+      border-radius: 25px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      animation: animateX 3s linear infinite, animateY 1s ease-out infinite alternate;
+    }
+    
+    @keyframes animateX{
+      from{
+        left: 0;
+      }
+      to{
+        left: 100%;
+      }
+    }
+    
+    @keyframes animateY{
+      from{
+        bottom: 0;
+      }
+      to{
+        bottom: 70%;
+      }
+    }
+    
+    .container2{
+      background-color: lightgrey;
+      width: 65vw;
+      height: 100vh;
+      position: relative;
+      top: 20px;
+      /* display: none; */
+      /* visibility: hidden; */
+    }
+    
+    .ball2{
+      background-color: darkgrey;
+      height: 40px;
+      width: 40px;
+      border: 2px solid black;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: animateW 1s ease-out infinite alternate, animateZ 3s linear infinite;
+    }
+    
+    @keyframes animateW{
+      from{
+        left: 0;
+      }
+      to{
+        left: 70%;
+      }
+    }
+    
+    @keyframes animateZ{
+      from{
+        top: 0;
+      }
+      to{
+        top: 75%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="ball">B-1
+    </div>
+  </div>
+  <div class="container2">
+    <div class="ball2">B-2
+    </div>
+  </div>
+</body>
+</html>

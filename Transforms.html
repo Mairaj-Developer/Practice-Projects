@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transforms</title>
+  <style>
+  
+  body{
+    background-color: black;
+  }
+    .container{
+      border: 5px solid lightgrey;
+      background-color: grey;
+      width: 80vw;
+      height: 40vh;
+      place-self: center;
+      margin-top: 210px;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .box{
+      width: 12vw;
+      height: 6vh;
+      place-self: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+    
+    .box:nth-child(even){
+      background-color: lightyellow;
+      color: lightpink;
+      transform: rotate(10deg) scale(1.4) skewx(8deg);
+    }
+    
+    .box:nth-child(odd){
+      background-color: lightpink;
+      color: lightyellow;
+      transform: rotate(350deg) skewy(8deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+  </div>
+</body>
+</html>

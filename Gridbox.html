@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container{
+      border: 5px solid black;
+      margin: 10px;
+      display: grid;
+      grid-template-columns: [first] 100px [second] 100px [third] 100px [fourth];
+      grid-template-rows: [first] 100px [second] 100px [third] 100px [fourth] 100px [fifth];
+      /* justify-content: center; */
+      /* align-items: center; */  
+      place-content: center;
+      place-items: center;
+    }
+    
+    .items{
+      width: 50px;
+      height: 50px;
+      background-color: steelblue;
+      border: 2px solid lightblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      box-shadow: 5px 7px 11px 1px steelblue;
+    }
+    
+    .item-1{
+      grid-column-end: first/second;
+      grid-row: first/second;
+    }
+    .item-2{
+      grid-column: second/third;
+      grid-row: first/second;
+    }
+    .item-3{
+      grid-column: third/fourth;
+      grid-row: first/second;
+    }
+    .item-4{
+      grid-column: first/second;
+      grid-row: second/third;
+    }
+    .item-5{
+      grid-column: second/third;
+      grid-row: second/third;
+    }
+    .item-6{
+      grid-column: third/fourth;
+      grid-row: second/third;
+    }
+    .item-7{
+      grid-column: first/second;
+      grid-row: third/fourth;
+    }
+    .item-8{
+      grid-column: second/third;
+      grid-row: third/fourth;
+    }
+    .item-9{
+      grid-column: third/fourth;
+      grid-row: third/fourth;
+    }
+    .item-10{
+      grid-column: first/second;
+      grid-row: fourth/fifth;
+    }
+    .item-11{
+      grid-column: second/third;
+      grid-row: fourth/fifth;
+    }
+    .item-12{
+      grid-column: third/fourth;
+      grid-row: fourth/fifth;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="items item-4">4</div>
+    <div class="items item-2">2</div>
+    <div class="items item-5">5</div>
+    <div class="items item-3">3</div>
+    <div class="items item-1">1</div>
+    <div class="items item-6">6</div>
+    <div class="items item-8">8</div>
+    <div class="items item-7">7</div>
+    <div class="items item-10">10</div>
+    <div class="items item-12">12</div>
+    <div class="items item-11">11</div>
+    <div class="items item-9">9</div>
+  </div>
+</body>
+</html>
